@@ -10,6 +10,7 @@
 }
 body{
     color: white;
+    font-family: 'Oswald', sans-serif;
 }
 .headerFont{
     font-family: 'Oswald', sans-serif;
@@ -18,3 +19,37 @@ body{
 .header{
     width: 100%;
 }
+@keyframes colorchange {
+    0% { color: white; }
+    100% { color: gray; }
+  }
+
+.mainText{
+    animation: colorchange 5s infinite alternate;
+  }
+
+  /* .grayText{
+      background-color: black
+  } */
+
+  .reSize{
+      height: 50px;
+      width: auto;
+      padding: 0, 0, 0, 10px;
+  }
+
+  .textShadow {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5),
+    -1px -1px 1px rgba(0,0,0,0.5),
+    1px -1px 1px rgba(0,0,0,0.5),
+    -1px 1px 1px rgba(0,0,0,0.5);
+  }
+
+  .imgResizing{
+      height: auto;
+      width: 150px;
+      padding: 15px;
+  }
+  .center {
+      justify-content: center;
+  }
