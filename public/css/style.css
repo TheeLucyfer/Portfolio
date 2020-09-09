@@ -1,7 +1,7 @@
 .background {
     background-image: url("../images/background.jpg");
-    position: fixed;
-    z-index: -1;
+    /* position: fixed; */
+    /* z-index: -1; */
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -26,6 +26,8 @@ body{
 
 .mainText{
     animation: colorchange 5s infinite alternate;
+    padding: 200px 0 20px 0;
+    font-size: 3vw;
   }
 
   /* .grayText{
@@ -50,6 +52,18 @@ body{
       width: 150px;
       padding: 15px;
   }
-  .center {
+  .contentCenter {
       justify-content: center;
+  }
+  .textCenter{
+      text-align: center;
+  }
+  .subText{
+      font-size: 2.5vw;
+  }
+  .blackText{
+      color:black;
+  }
+  .bigPadding{
+      padding: 60px 0 0 0;
   }
