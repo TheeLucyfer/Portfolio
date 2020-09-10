@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+input {
+    color: #777777;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #4aaaa5;
+    color:white;
+    padding: 5px 20px;
+    border: none;
+    width: auto;
+    }
+textarea {
+    width: 100%;
+}
+
+body {
+    background-image: url(../images/background.png);  
+    margin: 0px;
+}
+.clearfix {
+    clear:both;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #4aaaa5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.normalText {
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mainHeading  {
+    background-color: #ffffff;
+    border-color: #cccccc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.footer {
+    background-color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mainContent {
+    background-color: #ffffff;
+    border-color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 30px;
+    max-width: 960px;
+    margin: 20px auto 20px auto;
+    line-height: 2em;
+    color: #777777;
+}
+.mainHeading h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4aaaa5;
+    float: left;
+    margin: 0;
+    padding: 20px;
+}
+.mainHeading a {
+    float: right;
+    padding: 27.5px 10px;
+    color: #999999;
+    text-decoration: none;
+
+}
+.headShot {
+    float: left;
+    height: 200px;
+    margin: 10px;
+}
+
+.sos {
+    max-width: 960px;
+    margin: auto;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
+    background-color: #666666;
+    border-top: 7px solid #4aaaa5;
+    text-align: center;
+    color: white;
+   
+ }
+ .portfolio-bois {
+     float: left;
+     margin: 45px;
+     position: relative;
+ }
+ .absolute-positions {
+     display: block;
+     position: absolute;
+     bottom: 5px;
+     background-color: #4aaaa5;
+     color: white;
+    width: 100%;
+    text-align: center;
+ }
+ .imgSize {
+     width: 300px;
+     margin: auto;
+ }
+ .mainText{
+    background-color: #ffffff;
+    border-color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+  
+    }
+
+    .navbarCenter {
+        justify-content: center;
+    }
+    .noGrow {
+        flex-grow: 0;
+    }
+
+    .navbar-light .textColors {
+        color: white;
+        background-color: #4aaaa5;
+        padding: 20px;
+    }
+    .noPadding {
+        padding: 0px;
+    }
+    .Relative-Portfolio {
+        position: relative;
+        margin: 20px;
+    }
+    .newImages {
+        width: 300px;
+        height: 300px;
+    }

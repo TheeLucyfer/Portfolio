@@ -2,6 +2,15 @@ html{
     scroll-behavior: smooth;
 }
 
+
+.oldSite {
+    z-index: 1000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+
 .background {
   background-image: url("../images/croppedbackground.jpg");
   /* position: fixed; */
@@ -20,13 +29,26 @@ body {
   width: 100vw;
 }
 
+body.showOld{
+    overflow: hidden;
+}
+
 .headerFont {
   font-family: "Oswald", sans-serif;
   padding: 10px;
 }
+
 .header {
   width: 100%;
+  position: fixed;
+  z-index: 999;
+  transition: background-color 0.2s;
 }
+
+.header.scrolled {
+    background-color: rgba(0, 0, 0, .5);
+}
+
 .header a, .header a:hover{
     color: white;
     text-decoration: none;
