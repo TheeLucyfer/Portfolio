@@ -11,6 +11,7 @@
 body {
   color: white;
   font-family: "Oswald", sans-serif;
+  overflow-x: hidden;
 }
 .headerFont {
   font-family: "Oswald", sans-serif;
@@ -66,8 +67,9 @@ body {
 .blackText {
   color: black;
 }
-.bigPadding {
-  padding: 60px 0 0 0;
+.bigMargin {
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .projectPictures {
@@ -77,4 +79,22 @@ body {
   border-radius: 5px;
   box-shadow: 5px 7px 6px -2px #00000045;
   margin-bottom: 10px;
+}
+
+.blackBackground{
+    background-color: black;
+}
+.whiteBackground {
+    background-color: white;
+}
+.footer{
+    min-height: 400px;
+}
+.bigPadding{
+    padding: 100px 0;
+}
+
+svg, .icon {
+    fill:white;
+    width: 4em;
 }
