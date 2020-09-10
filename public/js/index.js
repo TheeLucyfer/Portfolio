@@ -35,4 +35,6 @@ function burnItDown(){
     document.body.classList.remove("showOld")
     let burnButton = document.querySelector(".burnButton")
     burnButton.classList.remove("show")
+    let fireSound = document.querySelector("#fireAudio")
+    fireSound.play()
 }

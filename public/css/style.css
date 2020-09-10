@@ -1,3 +1,6 @@
+:root{
+    --transitionSpeed: 1.5s ease-out;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -8,14 +11,30 @@ html{
     width: 100vw;
     height: 100vh;
     border: none;
-    transition: clip-path 1.5s;
+    transition: clip-path var(--transitionSpeed);
+}
+.fire{
+ 
+    height: 156px;
+    left: 0;
+    right: 0;
+    background: url("../images/fire.webp");
+    position: fixed;
+    z-index: 1001;
+    transition: bottom var(--transitionSpeed);
 }
 
+body.showOld .fire{
+    bottom: -156px; 
+}
+body:not(.showOld) .fire{
+    bottom: 100%;
+}
 body.showOld .oldSite {
     clip-path: inset(0 0 0 0)
 }
 
-body.showOld *:not(.oldSite):not(.burnButton) {
+body.showOld *:not(.preSite) {
     display:none !important;
 }
 
@@ -116,7 +135,7 @@ body.showOld{
 
 .imgResizing {
   height: auto;
-  width: 150px;
+  width: 250px;
   padding: 15px;
 }
 .contentCenter {
