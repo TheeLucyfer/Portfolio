@@ -1,6 +1,7 @@
 let header;
 window.addEventListener("load", (ev)=>{
-    header = document.querySelector(".header")
+    header = document.querySelector(".header");
+    initBurnDownTimer();
 })
 
 
@@ -18,3 +19,20 @@ window.addEventListener("scroll", (ev) =>{
         header.classList.remove("scrolled")
     }
 })
+
+
+function initBurnDownTimer() {
+    setTimeout(spawnBurnButton, 1500)
+}
+
+function spawnBurnButton(){
+    let burnButton = document.querySelector(".burnButton")
+    burnButton.classList.add("show")
+    burnButton.addEventListener("click", burnItDown)
+}
+
+function burnItDown(){
+    document.body.classList.remove("showOld")
+    let burnButton = document.querySelector(".burnButton")
+    burnButton.classList.remove("show")
+}
