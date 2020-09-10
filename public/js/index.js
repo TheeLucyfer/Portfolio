@@ -36,5 +36,6 @@ function burnItDown(){
     let burnButton = document.querySelector(".burnButton")
     burnButton.classList.remove("show")
     let fireSound = document.querySelector("#fireAudio")
+    fireSound.volume = 0.2
     fireSound.play()
 }
