@@ -24,19 +24,19 @@
                 </div>
                 <div class="col-3"></div>
                 <div class="col-1">
-                    <h3 class="headerFont">About</h3>
+                    <h3 class="headerFont"><a href="#about">About</a></h3>
                 </div>
                 <div class="col-1">
-                    <h3 class="headerFont">Contact</h3>
+                    <h3 class="headerFont"> <a href="#portfolio">Portfolio</a></h3>
                 </div>
                 <div class="col-1">
-                    <h3 class="headerFont">Portfolio</h3>
+                    <h3 class="headerFont"> <a href="#contact">Contact</a></h3>
                 </div>
             </div>
         </div>
         <br /><br /><br />
         <!-- Name and button -->
-        <div class="container">
+        <div class="container hero">
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8">
@@ -62,9 +62,11 @@
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8 textCenter">
-                    <button type="button" class="reSize btn btn-success">
-                        Learn More
-                    </button>
+                    <a href="#about">
+                        <button type="button" class="reSize btn btn-success">
+                            Learn More
+                        </button>
+                    </a>
                 </div>
                 <div class="col-2"></div>
             </div>
@@ -73,7 +75,7 @@
     </div>
     <!-- About me section -->
 
-    <div class="container bigMargin">
+    <div class="container bigMargin" id="about">
         <div class="row">
             <div class="col-2"></div>
             <div class="col-8">
@@ -105,7 +107,7 @@
     </div>
     <!-- End of about me section -->
     <!-- First two projects on display -->
-    <div class="container bigMargin">
+    <div class="container bigMargin" id="portfolio">
         <div class="row">
             <div class="col-1"></div>
             <div class="col-5">
@@ -135,7 +137,7 @@
                 <a target="_blank" href="https://github.com/TheeLucyfer/Eater">
                     <img src="./public/images/project.png" class="projectPictures">
                     <h3 class="blackText">Eater</h3>
-                    <h4 class="blackText">Recipe searching that displays results, and useage of local storage for recent
+                    <h4 class="blackText">Recipe searching that displays results, and uses local storage for recent
                         searches </h4>
                 </a>
             </div>
@@ -149,14 +151,22 @@
             </div>
         </div>
     </div>
-
-    <div class="blackBackground footer">
+<!-- Footer -->
+    <div class="blackBackground footer" id="contact">
         <div class="container bigMargin bigPadding">
             <div class="row">
                 <div class="col-1"> </div>
                 <div class="col-10 textCenter">
-                    <img class="icon" src="./public/images/email.svg"/>
-                    <img class='icon' src='./public/images/linkedin.svg'/>
+                    <a href="mailto:theelucylamperouge@gmail.com" class="noUnderLine">
+                        <img class="icon mx-4" src="./public/images/email.svg"/>
+                    </a>
+                    
+                    <a target="_blank" href="https://www.linkedin.com/in/lucy-lamperouge-ba34961a0/" class="noUnderLine">
+                        <img class='icon mx-4' src='./public/images/linkedin.svg'/>
+                    </a>
+                    <a target="_blank" href="./public/My_Resume.pdf" class="noUnderLine">
+                        <img class="icon mx-4" src="./public/images/portfolio.svg"/>
+                    </a>
                 </div>
                 <div class="col-1"></div>
             </div>
